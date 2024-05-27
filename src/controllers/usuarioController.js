@@ -37,7 +37,16 @@ async function getById(req, res) {
 // Atualiza um usuário
 async function update(req, res) {
     try {
-        const usuario = await Usuario.findByIdAndUpdate(req.params.id, req.body, { new: true, runValidators: true });
+        const { id } = req.params;
+        const { nome, email, senha } = req.body;
+
+        // Verifica se o email já está em uso por outro usuário
+        const existingUser = await Usuario.findOne({ email });
+        if (existingUser && existingUser._id != id) {
+            return res.status(400).json({ error: 'O email já está em uso por outro usuário' });
+        }
+
+        const usuario = await Usuario.findByIdAndUpdate(id, { nome, email, senha }, { new: true, runValidators: true });
         if (!usuario) {
             return res.status(404).json({ error: 'Usuário não encontrado' });
         }
