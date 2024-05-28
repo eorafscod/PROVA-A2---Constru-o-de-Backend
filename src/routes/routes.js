@@ -5,32 +5,37 @@ const router = express.Router()
 const usuariosController = require('../controllers/usuarioController')
 const generoController = require('../controllers/generoController')
 const filmeController = require('../controllers/filmeController');
+const serieController = require('../controllers/serieController');
 
 // validators
 const { validarUsuario } = require('../validators/usuariovalidator')
 const validarID = require('../validators/idValidator')
 
-// serie - Cargo
+// genero
+router.post('/generos', generoController.create);
+router.get('/generos', generoController.getAll);
+router.get('/generos/:id', generoController.getById);
+router.put('/generos/:id', generoController.update);
+router.delete('/generos/:id', generoController.remove);
 
-
-// genero - Departamentos
-
-
-// filme - Funcionarios
+// filme
 router.post('/filmes', filmeController.create);
 router.get('/filmes', filmeController.getAll);
 router.get('/filmes/:id', validarID, filmeController.getById);
 router.put('/filmes/:id', validarID, filmeController.update);
 router.delete('/filmes/:id', validarID, filmeController.remove);
 
-// avaliacao - Projetos
-router.post('/generos', generoController.create)
-router.get('/generos', generoController.getAll)
-router.get('/generos/:id', generoController.getById)
-router.put('/generos/:id', generoController.update)
-router.delete('/generos/:id', generoController.remove)
+// serie
+router.post('/series', serieController.create);
+router.get('/series', serieController.getAll);
+router.get('/series/:id', validarID, serieController.getById);
+router.put('/series/:id', validarID, serieController.update);
+router.delete('/series/:id', validarID, serieController.remove);
 
-// Rotas para usuários - tarefa
+
+// avaliacao
+
+// Rotas para usuários
 router.post('/usuarios', validarUsuario, usuariosController.create)
 router.get('/usuarios', usuariosController.getAll)
 router.get('/usuarios/:id', validarID, usuariosController.getById)

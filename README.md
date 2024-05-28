@@ -48,3 +48,11 @@
   - Criação do controlador `filmeController.js`
   - Atualização do README.md com o progresso detalhado
   - **Status:** Funcional
+
+  #### Data: 28-05
+- **Série**
+  - **Objetivo:** Implementar o CRUD para a entidade Série e adicionar múltiplos gêneros a uma série.
+  - Criação do modelo `serie.js`
+  - Criação do controlador `serieController.js`
+  - Atualização do README.md com o progresso detalhado
+  - **Status:** Em andamento
