@@ -4,14 +4,14 @@
 
 ### Histórico de Desenvolvimento
 
-#### Data: 27-05 manhã 
+#### Data: 26-05 manhã 
 - **Início ao projeto Netflix**
   - Configuração inicial do projeto
   - Configuração do ambiente de desenvolvimento
   - Criação da estrutura de diretórios
   - Criação do diagrama
 
-#### Data: 27-05 tarde
+#### Data: 26-05 tarde
 - **Conexão com o Banco de Dados**
   - **Objetivo:** Configurar a conexão com o banco de dados MongoDB.
   - Criação da configuração de conexão em `database/connection.js`
@@ -24,7 +24,7 @@
   - Criação das rotas de autenticação em `routes/autenticacao.routes.js`
   - **Status:** Em teste
 
-#### Data: 28-05
+#### Data: 27-05
 - **Usuário**
   - **Objetivo:** Implementar o CRUD para a entidade Usuário.
   - Criação do modelo `usuario.js`
@@ -41,4 +41,10 @@
   - Testes das rotas utilizando Postman
   - **Status:** Funcional
 
-  
+#### Data: 28-05
+- **Filme**
+  - **Objetivo:** Implementar o CRUD para a entidade Filme e adicionar múltiplos gêneros a um filme.
+  - Criação do modelo `filme.js`
+  - Criação do controlador `filmeController.js`
+  - Atualização do README.md com o progresso detalhado
+  - **Status:** Funcional
