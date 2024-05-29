@@ -15,14 +15,14 @@
 - **Conexão com o Banco de Dados**
   - **Objetivo:** Configurar a conexão com o banco de dados MongoDB.
   - Criação da configuração de conexão em `database/connection.js`
-  - **Status:** Funcional
+  - **Status:** Funcionando
 
   - **Autenticação**
   - **Objetivo:** Implementar autenticação de usuário.
   - Criação do controlador `authController.js`
   - Criação do middleware `authMiddleware.js`
   - Criação das rotas de autenticação em `routes/autenticacao.routes.js`
-  - **Status:** Em teste
+  - **Status:** Funcionando
 
 #### Data: 27-05
 - **Usuário**
@@ -31,7 +31,7 @@
   - Criação do controlador `usuarioController.js`
     - Criação do validators `usuariovalidator.js`
   - Testes das rotas utilizando Postman
-  - **Status:** Funcional
+  - **Status:** Funcionando
 
 #### Data: 28-05
 - **Gênero**
@@ -39,7 +39,7 @@
   - Criação do modelo `genero.js`
   - Criação do controlador `generoController.js`
   - Testes das rotas utilizando Postman
-  - **Status:** Funcional
+  - **Status:** Funcionando
 
 #### Data: 28-05
 - **Filme**
@@ -47,7 +47,7 @@
   - Criação do modelo `filme.js`
   - Criação do controlador `filmeController.js`
   - Atualização do README.md com o progresso detalhado
-  - **Status:** Funcional
+  - **Status:** Funcionando
 
   #### Data: 28-05
 - **Série**
@@ -55,4 +55,13 @@
   - Criação do modelo `serie.js`
   - Criação do controlador `serieController.js`
   - Atualização do README.md com o progresso detalhado
-  - **Status:** Em andamento
+  - **Status:** Funcionando
+
+  #### Data: 39-05
+- **Avaliação**
+  - **Objetivo:** Implementar o CRUD para a entidade Avaliação.
+  - Criação do modelo `review.js`
+  - Criação do controlador `reviewController.js`
+  - Criação das rotas em `review.routes.js`
+  - Atualização do README.md com o progresso detalhado
+  - **Status:** Funcionando

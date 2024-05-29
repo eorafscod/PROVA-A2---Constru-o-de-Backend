@@ -6,6 +6,8 @@ const usuariosController = require('../controllers/usuarioController')
 const generoController = require('../controllers/generoController')
 const filmeController = require('../controllers/filmeController');
 const serieController = require('../controllers/serieController');
+const reviewController = require('../controllers/reviewController');
+
 
 // validators
 const { validarUsuario } = require('../validators/usuariovalidator')
@@ -34,6 +36,11 @@ router.delete('/series/:id', validarID, serieController.remove);
 
 
 // avaliacao
+router.post('/reviews', reviewController.create);
+router.get('/reviews', reviewController.getAll);
+router.get('/reviews/:id', validarID, reviewController.getById);
+router.put('/reviews/:id', validarID, reviewController.update);
+router.delete('/reviews/:id', validarID, reviewController.remove);
 
 // Rotas para usuários
 router.post('/usuarios', validarUsuario, usuariosController.create)
