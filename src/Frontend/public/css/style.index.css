@@ -1,0 +1,153 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('/Frontend/image/fundo\ pagina\ inicial.jpg');
+    background-color: #ffffff;
+    color: #fff;
+}
+
+/* Container Principal */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+/* Caixa de Login */
+.login-box {
+    background: rgba(0, 0, 0, 0.863);
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+/* Título */
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+/* Formulário */
+form {
+    margin-bottom: 1rem;
+}
+
+/* Grupo de Formulário */
+.form-group {
+    margin-bottom: 1rem;
+}
+
+/* Labels */
+label {
+    display: block; /* Exibição em bloco */
+    margin-bottom: 0.5rem; /* Espaçamento inferior */
+    color: #ffffff; /* Cor do texto */
+}
+
+/* Inputs de Email e Senha */
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: rgba(107, 107, 107, 0.514);
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+/* Botão Principal */
+button {
+    width: 100%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #e50914;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff0000; /* Cor de fundo ao passar o mouse */
+}
+
+/* Login Social */
+.social-login {
+    margin-bottom: 1rem;
+}
+
+/* Estilo do Botão de Login do Google */
+.google-login {
+    background-color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.google-login:hover {
+    background-color: #d4d4d4;
+}
+
+/* Estilo do Ícone do Google como Pseudo-Elemento */
+.google-login::before {
+    content: "";
+    background-image: url('../image/icons/google.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+/* Link para Cadastro */
+.signup-link a {
+    color: #ff0000;
+
+}
+
+/* Opções do Formulário */
+.form-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+/* Lembrar */
+.remember-me {
+    display: flex;
+    font-size: 0.9rem;
+    margin-top: -20px;
+}
+
+.remember-me input[type="checkbox"] {
+    margin-right: 10px;
+    margin-top: -4px;
+}
+
+/* Precisa de Ajuda */
+.help a {
+    display: flex;
+    color: #e50914;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-top: -22px;
+
+}
+
+.help a:hover {
+    text-decoration: underline;
+}

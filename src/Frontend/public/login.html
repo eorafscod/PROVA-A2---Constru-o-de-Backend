@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Login</title>
+    <link rel="stylesheet" href="css/style.index.css">
+    <script src="/src/Frontend/src/login.js" defer></script> <!-- Adicione isso para o arquivo de script -->
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h1>Entrar</h1>
+            <form id="loginForm" action="">
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="password" id="password" name="password" placeholder="Senha" required>
+                </div>
+                <div class="form-options">
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Lembrar</label>
+                    </div>
+                    <div class="help">
+                        <a href="#">Precisa de ajuda?</a>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Entrar</button>
+            </form>
+            <div class="social-login">
+                <button class="google-login"></button>
+            </div>
+            <div class="signup-link">
+                <p>Novo aqui? <a href="registrar.html">Criar conta</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

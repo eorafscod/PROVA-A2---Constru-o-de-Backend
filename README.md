@@ -57,7 +57,7 @@
   - Atualização do README.md com o progresso detalhado
   - **Status:** Funcionando
 
-  #### Data: 39-05
+  #### Data: 29-05
 - **Avaliação**
   - **Objetivo:** Implementar o CRUD para a entidade Avaliação.
   - Criação do modelo `review.js`
