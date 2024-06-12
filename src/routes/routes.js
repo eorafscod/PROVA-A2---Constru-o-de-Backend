@@ -8,7 +8,6 @@ const filmeController = require('../controllers/filmeController');
 const serieController = require('../controllers/serieController');
 const reviewController = require('../controllers/reviewController');
 
-
 // validators
 const { validarUsuario } = require('../validators/usuariovalidator')
 const validarID = require('../validators/idValidator')
